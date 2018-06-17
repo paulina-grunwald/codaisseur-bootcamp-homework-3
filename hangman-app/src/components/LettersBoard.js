@@ -16,4 +16,4 @@ class LettersBoard extends React.Component {
   }
 }
 
-export default connect(null, { makeGuess })(LettersBoard)
+export default connect({ makeGuess })(LettersBoard)

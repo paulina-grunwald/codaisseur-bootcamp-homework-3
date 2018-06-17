@@ -17,4 +17,4 @@ class StartGameButton extends Component {
   }
 }
 
-export default connect(null, {newGame})(StartGameButton)
+export default connect({newGame})(StartGameButton)

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
-import { newGame } from '../actions/game'
 import {showGuess, wrongGuessCount, isWinner, gameFinished} from '../lib/game'
 import './SecretWord.css'
 
