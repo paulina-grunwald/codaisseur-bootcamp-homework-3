@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { newGame } from '../actions/game'
-import {showGuess} from '../lib/game'
+import {showGuess, wrongGuessCount, isWinner} from '../lib/game'
+import './SecretWord.css'
 
 export class  SecretWord extends Component {
 
   render() {
-    const matchGuessesToWord = showGuess(this.props.word.toUpperCase(),this.props.guesses)
-    console.log(this.props.guesses)
-
+    const matchGuessesToWord = showGuess(this.props.word,this.props.guesses)
+    const wrongGuesses = wrongGuessCount(this.props.word, this.props.guesses)
+    const gameWon = isWinner(this.props.word, this.props.guesses)
     return (
-      <p className="ShowGame">The Secret Word is: {matchGuessesToWord}</p>
+      <div className="jumbotrone">
+        <div className="Secret-word">The Secret Word is: {matchGuessesToWord}</div>
+        <div className="WrongGuesses">The Count of wrong guesses is: {wrongGuesses}</div>
+        <div>{gameWon && <p>You have won the game! Congrats!</p>}</div>
+      </div>  
     )
   }
 }

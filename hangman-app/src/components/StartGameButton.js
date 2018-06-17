@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react'
 import {connect} from 'react-redux'
 import {newGame} from '../actions/game'
+import './StartGameButton.css'
 
 
 class StartGameButton extends PureComponent {
@@ -10,7 +11,7 @@ class StartGameButton extends PureComponent {
   render() {
 
     return (
-      <button onClick={() => {this.handleStartGame()}}>
+      <button className="Button btn btn-warning" onClick={() => {this.handleStartGame()}}>
         > New Game
       </button>
     )

@@ -4,6 +4,7 @@ import StartGameButton from './StartGameButton';
 import SecretWord from './SecretWord';
 import Title from './Title';
 
+
 export default class GamePage extends React.Component {
 
   render() {
@@ -12,10 +13,11 @@ export default class GamePage extends React.Component {
       <div>
         <Title />
         <div>
-          < SecretWord /> 
+          <SecretWord /> 
           <StartGameButton />
-          <LettersBoard />
         </div>
+        
+        <LettersBoard />
       </div>
     );
   }

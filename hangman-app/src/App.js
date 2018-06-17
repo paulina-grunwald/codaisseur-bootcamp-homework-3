@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logohang from './logo-hang.png';
 import './App.css';
 import WelcomePage from './components/WelcomePage'
 import GamePage from './components/GamePage'
@@ -10,8 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src={logohang} className="App-logo" alt="logohang" />
+          <h1 className="App-title">Created with React&Redux</h1>
         </header>
         <Route exact path="/" component={WelcomePage} />
         <Route exact path="/hangman" component={GamePage} />
