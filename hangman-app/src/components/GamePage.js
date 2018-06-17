@@ -1,14 +1,22 @@
-import React from 'react';
+import * as React from 'react'
+import LettersBoard from './LettersBoard';
+import StartGameButton from './StartGameButton';
+import SecretWord from './SecretWord';
+import Title from './Title';
 
-class GamePage extends React.Component {
+export default class GamePage extends React.Component {
+
   render() {
+    console.log(this.props.Secretword)
     return (
       <div>
-        <h1>Start hangman app</h1>
-
+        <Title />
+        <div>
+          < SecretWord /> 
+          <StartGameButton />
+          <LettersBoard />
+        </div>
       </div>
     );
   }
 }
-
-export default GamePage;

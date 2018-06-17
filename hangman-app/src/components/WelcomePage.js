@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'react-router-dom'
 
 
-class GamePage extends React.Component {
+class WelcomePage extends React.Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class GamePage extends React.Component {
   }
 }
 
-export default GamePage;
+export default WelcomePage;
