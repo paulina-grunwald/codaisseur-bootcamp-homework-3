@@ -1,10 +1,9 @@
-import React, {PureComponent} from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {newGame} from '../actions/game'
 import './StartGameButton.css'
 
-
-class StartGameButton extends PureComponent {
+class StartGameButton extends Component {
   handleStartGame = () => {
     this.props.newGame()
   }  

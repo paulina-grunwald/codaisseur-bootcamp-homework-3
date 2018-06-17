@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import { connect } from 'react-redux'
 import { newGame } from '../actions/game'
 import {showGuess, wrongGuessCount, isWinner, gameFinished} from '../lib/game'
 import './SecretWord.css'
 
-export class  SecretWord extends Component {
+export class  SecretWord extends React.Component {
 
   render() {
     const matchGuessesToWord = showGuess(this.props.word,this.props.guesses)

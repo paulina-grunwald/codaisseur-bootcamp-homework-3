@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import { connect } from 'react-redux'
 import { makeGuess } from '../actions/game'
 import './LettersBoard.css'
 
-class LettersBoard extends Component {
+class LettersBoard extends React.Component {
   render(){
     const letters = [...Array(26)].map((val, i) => String.fromCharCode(i + 65).toLowerCase());
     return(

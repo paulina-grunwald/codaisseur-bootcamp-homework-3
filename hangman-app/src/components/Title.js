@@ -1,8 +1,5 @@
-import React, { PureComponent } from 'react'
-// import PropTypes from 'prop-types'
-
-export default class Title extends PureComponent {
-  
+import * as React from 'react'
+export default class Title extends  React.Component {
   
   render() {
     return <h1>Welcome to the Hangman!</h1>
