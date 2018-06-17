@@ -1,5 +1,4 @@
-export const MAKE_GUESS = 'MAKE_GUESS'
-export const NEW_GAME = 'NEW_GAME'
+import {NEW_GAME, MAKE_GUESS} from '../actions/game.js'
 
 export default function(state = [], action) {
   switch (action.type) {

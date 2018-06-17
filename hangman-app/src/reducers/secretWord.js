@@ -1,6 +1,6 @@
 import {randomWord} from '../lib/game'
 
-export const NEW_GAME = 'NEW_GAME'
+import {NEW_GAME} from '../actions/game.js'
 
 
 export default function(state = randomWord(), action) {
