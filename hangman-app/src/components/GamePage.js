@@ -15,8 +15,7 @@ export default class GamePage extends React.Component {
         <div>
           <SecretWord /> 
           <StartGameButton />
-        </div>
-        
+        </div>        
         <LettersBoard />
       </div>
     );
