@@ -30,4 +30,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { newGame })(SecretWord)
+export default connect(mapStateToProps)(SecretWord)
